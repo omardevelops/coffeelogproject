@@ -8,7 +8,7 @@ const preparations = beanData['PREPARATION'];
 const allData = [...beans, ...brews, ...mills, ...preparations];
 
 
-function getObjectById(uuid : string) {
+function getObjectById(uuid : string) : any {
   // Function to find an object by its 'config.uuid' field in the JSON data
   return allData.find(item => item.config.uuid === uuid);
 }
