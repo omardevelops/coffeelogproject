@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+Beanconqueror.json
+.prettierrc
+package-lock.json

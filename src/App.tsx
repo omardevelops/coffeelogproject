@@ -4,32 +4,32 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <div>
+            <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
+                <div className="mb-4 flex items-center gap-2">
+                    <img src={viteLogo} className="h-24" alt="Vite logo" />
+                    <img src={reactLogo} className="h-24" alt="React logo" />
+                    <img
+                        src="https://www.cdnlogo.com/logos/t/34/tailwind-css.svg"
+                        alt="Tailwind CSS Logo"
+                        className="h-12"
+                    />
+                </div>
+                <h1 className="mb-4 text-3xl font-bold">
+                    Vite + React + Tailwind CSS
+                </h1>
+                <button
+                    className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+                    onClick={() => setCount(count + 1)}
+                >
+                    Count is: {count}
+                </button>
+            </div>
+        </div>
+    )
 }
 
 export default App
